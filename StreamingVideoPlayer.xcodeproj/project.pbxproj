@@ -15,9 +15,18 @@
 		AA0776351D426C3F0086E7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0776331D426C3F0086E7DF /* Main.storyboard */; };
 		AA0776371D426C3F0086E7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0776361D426C3F0086E7DF /* Assets.xcassets */; };
 		AA07763A1D426C3F0086E7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0776381D426C3F0086E7DF /* LaunchScreen.storyboard */; };
+		AA1CB4DC1D47A5C7007BA2E9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1CB4DB1D47A5C7007BA2E9 /* MediaPlayer.framework */; };
+		AA1CB4DE1D47BDC4007BA2E9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1CB4DD1D47BDC4007BA2E9 /* AVKit.framework */; };
+		AA1CB4E11D47CDAA007BA2E9 /* videoInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CB4E01D47CDAA007BA2E9 /* videoInfoDataModel.m */; };
+		AA1CB4E41D47DAAB007BA2E9 /* datamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CB4E31D47DAAB007BA2E9 /* datamodel.m */; };
+		AA9D80C21D4908D400214106 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D80C11D4908D400214106 /* JournalViewController.m */; };
+		F1F2D683102B7B55D6D807AE /* libPods-StreamingVideoPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A67A737D8000E5432B7CE715 /* libPods-StreamingVideoPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34711458A62BCE3D8DBA87CE /* Pods-StreamingVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingVideoPlayer/Pods-StreamingVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		85568CAF0ADB7D112E3A67F9 /* Pods-StreamingVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingVideoPlayer/Pods-StreamingVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		A67A737D8000E5432B7CE715 /* libPods-StreamingVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamingVideoPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0776211D426C3F0086E7DF /* StreamingVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0776251D426C3F0086E7DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0776271D426C3F0086E7DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +40,14 @@
 		AA0776361D426C3F0086E7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0776391D426C3F0086E7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA07763B1D426C3F0086E7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1CB4DB1D47A5C7007BA2E9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		AA1CB4DD1D47BDC4007BA2E9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		AA1CB4DF1D47CDAA007BA2E9 /* videoInfoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoInfoDataModel.h; sourceTree = "<group>"; };
+		AA1CB4E01D47CDAA007BA2E9 /* videoInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoInfoDataModel.m; sourceTree = "<group>"; };
+		AA1CB4E21D47DAAB007BA2E9 /* datamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datamodel.h; sourceTree = "<group>"; };
+		AA1CB4E31D47DAAB007BA2E9 /* datamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = datamodel.m; sourceTree = "<group>"; };
+		AA9D80C01D4908D400214106 /* JournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalViewController.h; sourceTree = "<group>"; };
+		AA9D80C11D4908D400214106 /* JournalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +55,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1CB4DE1D47BDC4007BA2E9 /* AVKit.framework in Frameworks */,
+				AA1CB4DC1D47A5C7007BA2E9 /* MediaPlayer.framework in Frameworks */,
+				F1F2D683102B7B55D6D807AE /* libPods-StreamingVideoPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0035C383B10553AB49654965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34711458A62BCE3D8DBA87CE /* Pods-StreamingVideoPlayer.debug.xcconfig */,
+				85568CAF0ADB7D112E3A67F9 /* Pods-StreamingVideoPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AA0776181D426C3E0086E7DF = {
 			isa = PBXGroup;
 			children = (
 				AA0776231D426C3F0086E7DF /* StreamingVideoPlayer */,
 				AA0776221D426C3F0086E7DF /* Products */,
+				0035C383B10553AB49654965 /* Pods */,
+				AD6A159A47C86ABA03D0B419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +96,16 @@
 			children = (
 				AA0776271D426C3F0086E7DF /* AppDelegate.h */,
 				AA0776281D426C3F0086E7DF /* AppDelegate.m */,
+				AA1CB4DF1D47CDAA007BA2E9 /* videoInfoDataModel.h */,
+				AA1CB4E01D47CDAA007BA2E9 /* videoInfoDataModel.m */,
 				AA07762D1D426C3F0086E7DF /* MasterViewController.h */,
 				AA07762E1D426C3F0086E7DF /* MasterViewController.m */,
+				AA1CB4E21D47DAAB007BA2E9 /* datamodel.h */,
+				AA1CB4E31D47DAAB007BA2E9 /* datamodel.m */,
 				AA0776301D426C3F0086E7DF /* DetailViewController.h */,
 				AA0776311D426C3F0086E7DF /* DetailViewController.m */,
+				AA9D80C01D4908D400214106 /* JournalViewController.h */,
+				AA9D80C11D4908D400214106 /* JournalViewController.m */,
 				AA0776331D426C3F0086E7DF /* Main.storyboard */,
 				AA0776361D426C3F0086E7DF /* Assets.xcassets */,
 				AA0776381D426C3F0086E7DF /* LaunchScreen.storyboard */,
@@ -87,6 +124,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD6A159A47C86ABA03D0B419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CB4DD1D47BDC4007BA2E9 /* AVKit.framework */,
+				AA1CB4DB1D47A5C7007BA2E9 /* MediaPlayer.framework */,
+				A67A737D8000E5432B7CE715 /* libPods-StreamingVideoPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA07763E1D426C3F0086E7DF /* Build configuration list for PBXNativeTarget "StreamingVideoPlayer" */;
 			buildPhases = (
+				6C22C6D649D18C53624E5437 /* [CP] Check Pods Manifest.lock */,
 				AA07761D1D426C3E0086E7DF /* Sources */,
 				AA07761E1D426C3E0086E7DF /* Frameworks */,
 				AA07761F1D426C3E0086E7DF /* Resources */,
+				EA92C8778519B4C2A516A540 /* [CP] Embed Pods Frameworks */,
+				21C09996B4943C8F4FF4953F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +202,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21C09996B4943C8F4FF4953F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamingVideoPlayer/Pods-StreamingVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C22C6D649D18C53624E5437 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA92C8778519B4C2A516A540 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamingVideoPlayer/Pods-StreamingVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA07761D1D426C3E0086E7DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,7 +259,10 @@
 				AA07762F1D426C3F0086E7DF /* MasterViewController.m in Sources */,
 				AA0776291D426C3F0086E7DF /* AppDelegate.m in Sources */,
 				AA07762C1D426C3F0086E7DF /* StreamingVideoPlayer.xcdatamodeld in Sources */,
+				AA9D80C21D4908D400214106 /* JournalViewController.m in Sources */,
+				AA1CB4E11D47CDAA007BA2E9 /* videoInfoDataModel.m in Sources */,
 				AA0776261D426C3F0086E7DF /* main.m in Sources */,
+				AA1CB4E41D47DAAB007BA2E9 /* datamodel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +372,7 @@
 		};
 		AA07763F1D426C3F0086E7DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34711458A62BCE3D8DBA87CE /* Pods-StreamingVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreamingVideoPlayer/Info.plist;
@@ -282,6 +384,7 @@
 		};
 		AA0776401D426C3F0086E7DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85568CAF0ADB7D112E3A67F9 /* Pods-StreamingVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreamingVideoPlayer/Info.plist;
@@ -310,6 +413,7 @@
 				AA0776401D426C3F0086E7DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

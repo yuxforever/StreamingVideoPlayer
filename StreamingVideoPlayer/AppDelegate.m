@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "MasterViewController.h"
+#import <AWSCore/AWSCore.h>
+#import "BFTask.h"
+
+
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -19,6 +23,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // init AWSCognito
+    
+    
+    
+    // masterView splitView init
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
@@ -27,6 +36,35 @@
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
+                                                                                                    identityPoolId:@"us-east-1:f077300c-e12e-4e7b-8f9d-e6e5c96ce5c8"];
+    
+    //us-east-1:f077300c-e12e-4e7b-8f9d-e6e5c96ce5c8
+    
+    AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSEast1
+                                                                         credentialsProvider:credentialsProvider];
+    
+    AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = configuration;
+    // Retrieve your Amazon Cognito ID.
+    
+    
+    [[credentialsProvider getIdentityId] continueWithBlock:^id(AWSTask *task){
+        
+        if (task.error == nil)
+        {
+            NSString* cognitoId = credentialsProvider.identityId;
+            NSLog(@"cognitoId: %@", cognitoId);
+        }
+        else
+        {
+            NSLog(@"Error : %@", task.error);
+        }
+        
+        return nil;
+    }];
+
+    
     return YES;
 }
 

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "videoInfoDataModel.h"
 
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic)videoInfoDataModel *videoModeInfo;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end
